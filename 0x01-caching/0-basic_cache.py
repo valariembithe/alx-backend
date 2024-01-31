@@ -3,7 +3,7 @@
 from base_caching import BaseCaching
 
 
-class BasicCache:
+class BasicCache(BaseCaching):
     """Returns data from parent class attribute cache-data"""
     def put(self, key, item):
         """Assigns the item value to the key"""
@@ -16,4 +16,3 @@ class BasicCache:
         if key is None or key != isinstance(self.cache_data.keys()):
             return self.cache_data.get(key, None)
         return self.cache_data.get(key)
-    
