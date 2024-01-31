@@ -12,13 +12,13 @@ class FIFOCache(BaseCaching):
         self.cache_data = OrderedDict()
 
     def put(self, key, item):
-        ''' USing FIFO to pop the first item to cache '''
+        ''' Using FIFO to pop the first item to cache '''
         if key is None or item is None:
             return
         self.cache_data[key] = item
         if len(self.cache_data.items()) > BaseCaching.MAX_ITEMS:
             first_key, _ = self.cache_data.popitem(False)
-            print('Discard: {}'.format(first_key))
+            print('Discard:', first_key)
 
     def get(self, key):
         '''Return the value linked to the key popped'''
