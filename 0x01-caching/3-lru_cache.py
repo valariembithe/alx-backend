@@ -27,7 +27,8 @@ class LRUCache(BaseCaching):
 
     def get(self, key):
         '''Return the value linked to the key popped'''
-        if key is not None or key in self.cache_data():
-            self.cache_data.move_to_end(key, last=False)
-        return self.cache_data.get(key, None)
+        '''Return the value linked to the key popped'''
+        if key is None or key != self.cache_data.keys():
+            return self.cache_data.get(key, None)
+        return self.cache_data.get(key)
     
