@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Task 1 module """
 from collections import OrderedDict
+
 from base_caching import BaseCaching
 
 
@@ -18,7 +19,7 @@ class FIFOCache(BaseCaching):
         self.cache_data[key] = item
         if len(self.cache_data.items()) > BaseCaching.MAX_ITEMS:
             first_key, _ = self.cache_data.popitem(False)
-            print('Discard:', first_key)
+            print('DISCARD:', first_key)
 
     def get(self, key):
         '''Return the value linked to the key popped'''
