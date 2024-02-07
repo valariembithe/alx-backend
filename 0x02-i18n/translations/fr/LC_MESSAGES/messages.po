@@ -1,3 +1,4 @@
+# French translations for i18n
 msgid "home_title"
 msgstr "Bienvenue chez Holberton"
 

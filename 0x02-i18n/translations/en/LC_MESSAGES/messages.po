@@ -1,3 +1,4 @@
+# English translations for i18n
 msgid "home_title"
 msgstr "Welcome to Holberton"
 
