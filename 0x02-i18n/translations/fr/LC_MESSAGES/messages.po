@@ -1,5 +1,3 @@
-#msgid
-
 msgid "home_title"
 msgstr "Bienvenue chez Holberton"
 
