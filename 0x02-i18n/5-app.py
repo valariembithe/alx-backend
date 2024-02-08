@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 '''Task 5 module'''
-from flask import Flask, render_template
+from flask import Flask, render_template, g, request
 from flask_babel import Babel
-from flask import g, request
 from typing import Union, Dict
 
 
